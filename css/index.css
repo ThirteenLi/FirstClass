@@ -6,8 +6,14 @@
     color: aqua;
 }
 #header img{
-    vertical-align: middle;
+    vertical-align: bottom;
 }
 #cart{
-    width:50px;
+    width:224px;
+    height: 22px;
+    padding: 10px;
+    background: #ffff00;
+    text-align: center;
+    opacity: 0.5;
+    cursor: pointer;
 }
