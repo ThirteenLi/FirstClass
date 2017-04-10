@@ -1,0 +1,13 @@
+#header{
+    background: url(../images/banner.jpg) no-repeat center;
+    height: 600px;
+}
+#login,#header h1,#cart{
+    color: aqua;
+}
+#header img{
+    vertical-align: middle;
+}
+#cart{
+    width:50px;
+}
