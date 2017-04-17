@@ -2,18 +2,30 @@
     background: url(../images/banner.jpg) no-repeat center;
     height: 600px;
 }
-#login,#header h1,#cart{
-    color: aqua;
+#header .box {
+    width: 380px;
+    height: 60px;
+    /*background: #0000ff;*/
+    float: left;
+    line-height:60px;
 }
-#header img{
-    vertical-align: bottom;
+#login a:hover{
+    text-decoration: underline;
+}
+#login a,#title h1,#cart h4,#cart h5{
+    color:#fff;
+    cursor: pointer;
+}
+#title,#cart{
+    text-align: center;
 }
 #cart{
-    width:224px;
-    height: 22px;
-    padding: 10px;
-    background: #ffff00;
-    text-align: center;
+    background: #0a0a01 url(../images/cart.png) no-repeat center right;
+    height: 30px;
+    margin: 15px auto;
+    width: 160px;
+    line-height:35px;
     opacity: 0.5;
-    cursor: pointer;
+    filter:alpha(opacity=50);
+    float:right;
 }
