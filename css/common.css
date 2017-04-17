@@ -11,3 +11,9 @@ a{
 li{
     list-style: none;
 }
+.wrapper{
+    height:100%;
+    width:1140px;
+    margin: 0 auto;
+    /*background: #f00;*/
+}
