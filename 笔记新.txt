@@ -1,0 +1,67 @@
+网页开发
+1、html:内容
+2、css:样式
+3、javascript:交互
+psd切图到html+css+javascript
+标签<h1>     </h1>  (1-6)
+    <开始>内容<结束>
+document type文档类型
+html:5+tab
+<html>根标签
+<head>除了<title>外标签几乎都是给浏览器搜索引擎看的
+<body>给用户看的标签
+<head><body>兄弟标签
+<meta charset="UTF-8">//告诉浏览器用什么字符解析
+tab往后缩进
+shift+tab往前缩进
+<a href="http://www.baidu.com">baidu</a>默认当前窗口打开
+a+tab a标签 锚点
+<a href="http://www.baidu.com" target="_blank">baidu</a>
+新窗口打开
+jpg不透明png透明
+<img src="图片" alt="图片加载失败时友好提示" title="悬停显示信息"/>图片标签
+<ol>
+    <li>aa</li>
+    <li>bb</li>
+    <li>cc</li>
+</ol>有序列表
+<ul>
+    <li>aa</li>
+    <li>bb</li>
+    <li>cc</li>
+</ul>无序列表
+div区块+css 网页布局
+<table>表标签    <tr>行   <td>列
+<p>段落标签     <span>字间隔
+网页中标签都是矩形(框)
+行级元素：span a img     宽高是内容撑开的 行级元素和行级元素会在一行显示
+块级元素：h1~h6 div p li ul ol table     块级元素可以设置宽高 不设置宽充满父元素 自己占一行
+空格不能连续使用，连续使用用转义字符
+空格&nbsp;     小于号&lt;    大于号&gt;
+<h1 style=""></h1>
+background背景颜色 color字体颜色 width宽度 height高度
+<!--（注释） -->ctrl+/
+颜色#rrggbb
+r=red   g=green     b=blue 十六进制自己编颜色
+link标签外部样式
+css选择器：
+1、元素选择器，标签选择器   h1{}
+2、id选择器                 #id{}
+3、class（类）选择器       .class{}
+4、后代选择器                 father son{}
+5、子代选择器(不支持IE.678版本)   father > son{}有兼容性问题
+6、分组选择器 hi,div,#id{}
+7、多类选择器 .aa.bb{}
+8、伪类选择器 a:hover{}   (IE早期版本只对a好使)
+选择器的权重值
+id：100  class:10    tag（标签）:1
+权重值可以叠加   #id .class  :110
+行级元素里不能有块级元素
+padding内边距      margin外边距
+边框border：5px solid(实心)dotted（点）dashed（虚线）#000；
+body自带8个像素外边距
+IETester.exe
+backgrand: #cccccc url(图片) no-repeat 100px 50px;
+p自带16上下外边距
+
+normalize.css v2.0.1
