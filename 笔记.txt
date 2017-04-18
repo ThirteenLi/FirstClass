@@ -65,3 +65,35 @@ backgrand: #cccccc url(图片) no-repeat 100px 50px;
 p自带16上下外边距
 
 normalize.css v2.0.1
+浮动的元素空间释放，脱离文档流，类似脱离平面
+<float> left;
+clear:both;清除浮动，不会覆盖
+元素塌陷：子元素脱离文档流，父元素没有高度
+1、给父元素固定一个高度
+2、给父元素浮动
+3、绝对定位
+height:100%;相对高度，相对于父元素
+overflow:hidden;溢出隐藏
+子元素设置margin-top父元素会掉下去
+两元素兄弟关系，margin-bottem与margin-top取最大值
+display: block;行级元素转化为块级元素
+display: inline;块级元素转化为行级元素
+display: inline-block;同时具有两种元素属性
+display：none；不显示
+display有兼容性问题
+行级元素中回车会有空白
+行级元素脱离文档流也能设置长宽高
+transparent透明
+background-attachment:fixed背景图片不会滚动
+定位position:
+relative:相对定位，相对于自己的初始位置，不空间释放，不脱离文档流
+absolute:绝对定位，相对于离他最近的已定位的祖先元素
+fixed:固定定位，相对于浏览器，小广告（兼容性问题）
+static默认值
+父元素相对定位，子元素绝对定位，50%定位，margin-top设定子元素高度一半居中
+<input>输入框 value="1"默认值1
+text-indent:px;文本缩进
+outline:none;边框
+<br>换行
+<button>按钮
+默认字体大小16像素，中文不能小于20px
