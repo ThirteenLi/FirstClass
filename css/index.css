@@ -80,13 +80,98 @@
     border:1px solid #f55;
 }
 /*header end*/
+/*new-product开始*/
+#new-product{
+    height: 210px;
+    margin-top: 56px;
+    /*background: #f00;*/
+}
+#new-product .npb{
+    height: 100%;
+    float: left;
+    width:380px;
+}
+#npb1{
+    background: url(../images/bg1.jpg) no-repeat left 0;
+
+}
+#npb2{
+    background: url(../images/bg2.jpg) no-repeat center 0;
+
+}
+#npb3{
+    background: url(../images/bg3.jpg) no-repeat right 0;
+}
+#new-product .npb h2{
+    color: #ffff00;
+    padding-top: 156px;
+    padding-left: 190px;
+    cursor: pointer;
+    font-size: 33px;
+    font-weight:bolder;
+}
+/*new-product结束*/
+/*product开始*/
+#product{
+    margin-top: 40px;
+    height: 1000px;
+}
+#product .box{
+    border:1px solid #ccc;
+    width:360px;
+    height: 439px;
+    margin-right: 18px;
+    margin-top: 20px;
+    float: left;
+}
+#product .box2{
+    padding-left: 20px;
+    padding-top: 20px;
+    background: #fcf9ff;
+    padding-bottom: 28px;
+}
+#product .box img{
+    height:248px;
+    width:248px;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    vertical-align: bottom;
+}
+#product .box span{
+    background: deeppink;
+    color: white;
+    float: right;
+}
+#product .box p{
+    font-size: 23px;
+}
+#product .box input{
+    text-indent:10px;
+    height:28px;
+    margin: 10px 0;
+    outline:none;
+    font-size: 20px;
+}
+#product .box button{
+    color:white;
+    background: deeppink;
+    width: 150px;
+    height: 38px;
+    font-size: 23px;
+    font-weight:800;
+    outline: none;
+    border-radius: 10px;
+}
+/*product结束*/
+/*problem start*/
 #problem{
-    height: 600px;
-    margin-top: 50px;
-    background: url(../images/banner.jpg) no-repeat center;
+    height: 300px;
+    background: url(../images/banner2.jpg) no-repeat 0 0;
+    background-size: 100%;
 }
 #problem li{
     list-style: disc;
+    color:#fff;
 }
 #problem ul{
     padding-left: 50px;
@@ -97,3 +182,24 @@
     overflow:hidden;
     float: left;
 }
+/*#problem over*/
+/*#footer start*/
+#footer{
+    height:80px;
+    background: deeppink;
+}
+#footer h2,#footer h3{
+    color:white;
+    line-height: 80px;
+}
+#footer h3{
+    float: right;
+}
+#footer h2{
+    float: left;
+}
+#footer h2:hover{
+    background: #f00;
+
+}
+/*#footer over*/
