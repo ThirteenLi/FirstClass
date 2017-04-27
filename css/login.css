@@ -1,0 +1,27 @@
+/*user start*/
+#user{
+    height: 500px;
+}
+#user h2{
+    margin-top: 56px;
+}
+#user .box{
+    width: 570px;
+    float: left;
+    overflow: hidden;
+}
+#user #old-user{
+    padding-top: 28px;
+}
+#user #old-user h5{
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#user #old-user .input{
+    height: 28px;
+    width: 381px;
+}
+
+/*user end*/
