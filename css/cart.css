@@ -1,0 +1,15 @@
+#shopping-car{
+    height: 1600px;
+}
+#shopping-car #goods{
+    width: 855px;
+    height: 505px;
+    background: blue;
+    float: left;
+}
+#shopping-car #price{
+    width: 285px;
+    height: 382px;
+    background: red;
+    float: right;
+}
