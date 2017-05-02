@@ -1,0 +1,78 @@
+/*images start*/
+#images{
+    height: 310px;
+}
+#images h2{
+    text-indent: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#images  .wrapper div{
+    width: 142px;
+    height: 125px;
+    float: left;
+    position: relative;
+}
+#images .wrapper img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -59px;
+    margin-top: -49px;
+}
+/*images end*/
+/*product¿ªÊ¼*/
+#product{
+    margin-top: 40px;
+    height: 1000px;
+}
+#product h2{
+    text-indent: 15px;
+}
+#product .box{
+    border:1px solid #ccc;
+    width:360px;
+    height: 439px;
+    margin-right: 18px;
+    margin-top: 20px;
+    float: left;
+}
+#product .box2{
+    padding-left: 20px;
+    padding-top: 19px;
+    background: #fcf9ff;
+    padding-bottom: 28px;
+}
+#product .box img{
+    height:248px;
+    width:248px;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    vertical-align: bottom;
+}
+#product .box span{
+    background: deeppink;
+    color: white;
+    float: right;
+}
+#product .box p{
+    font-size: 23px;
+}
+#product .box input{
+    text-indent:10px;
+    height:28px;
+    margin: 10px 0;
+    outline:none;
+    font-size: 20px;
+}
+#product .box button{
+    color:white;
+    background: deeppink;
+    width: 150px;
+    height: 38px;
+    font-size: 23px;
+    font-weight:800;
+    outline: none;
+    border-radius: 10px;
+}
+/*product½áÊø*/
