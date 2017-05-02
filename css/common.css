@@ -52,6 +52,12 @@ li{
     filter:alpha(opacity=50);
     float:right;
 }
+#header #cart a{
+    color: #ffffff;
+    display:block;
+    height: 100%;
+    width: 100%;
+}
 #header #nav{
     height: 500px;
     width: 1140px;
