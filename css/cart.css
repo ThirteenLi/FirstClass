@@ -1,15 +1,107 @@
 #shopping-car{
-    height: 1600px;
+    height: 550px;
+    padding-top: 30px;
+    background: #efefef;
 }
 #shopping-car #goods{
     width: 855px;
-    height: 505px;
-    background: blue;
+    height: 475px;
+    /*background: blue;*/
     float: left;
 }
+#shopping-car #goods > h2{
+    margin-bottom: 20px;
+}
 #shopping-car #price{
-    width: 285px;
-    height: 382px;
-    background: red;
+    width: 240px;
+    height: 258px;
+    /*background: red;*/
     float: right;
+    border-left: 1px solid #000000;
+    padding-top: 25px;
+    margin-top: 60px;
+    padding-left: 40px;
+}
+#shopping-car .goods-img{
+    width: 134px;
+    height: 170px;
+    float: left;
+}
+#shopping-car .goods-info{
+    height: 110px;
+    width: 650px;
+    float: left;
+    margin-left: 20px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 15px;
+}
+#shopping-car .goods-info h3{
+    margin-bottom: 50px;
+    margin-top: 15px;
+}
+#shopping-car .box-up{
+    height: 150px;
+    margin-top: 20px;
+}
+#shopping-car .goods-img img{
+    width: 134px;
+    height: 144px;
+}
+#shopping-car .cart-sec{
+    width: 825px;
+    position: relative;
+}
+#shopping-car .cart-sec > img{
+    right: 0;
+    position: absolute;
+    z-index: 1;
+}
+#shopping-car .goods-info .big{
+    font-size: 27px;
+    display:inline-block;
+    margin-right: 190px;
+}
+#shopping-car .goods-info input{
+    font-size: 18px;
+    display: inline-block;
+    height: 25px;
+    width: 80px;
+}
+#shopping-car .box-down{
+    position: relative;
+    height: 20px;
+}
+#shopping-car .box-down p{
+   position: absolute;
+    left: 156px;
+}
+#shopping-car .box-down span{
+    position: absolute;
+    right: 60px;
+}
+#shopping-car #price a{
+    display: block;
+    width: 155px;
+    height: 30px;
+    text-align: center;
+    font-size:20px;
+    color:white;
+    background: #ffa500;
+    line-height: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+#shopping-car #price a:hover{
+    background: #000;
+}
+#shopping-car #price h3{
+    margin-bottom: 15px;
+}
+#shopping-car #price .left{
+    margin-right: 77px;
+}
+#shopping-car #price div{
+    border-bottom: 1px solid #000000;
+    padding-bottom: 10px;
 }
