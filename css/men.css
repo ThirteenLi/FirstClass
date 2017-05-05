@@ -1,0 +1,136 @@
+#goods-info{
+    height: 700px;
+    margin-top: 40px;
+}
+#pictures{
+    height: 556px;
+    width: 490px;
+    /*border: 1px solid #000;*/
+    overflow: hidden;
+    float: left;
+}
+#pictures .big{
+    width: 474px;
+    height: 400px;
+    margin: 5px;
+    border: 1px solid #000000;
+    padding: 2px;
+}
+#pictures .small{
+    width: 151px;
+    height: 126px;
+    margin-left: 5px;
+    padding: 2px;
+    border: 1px solid #000000;
+    float: left;
+    margin-bottom: 5px;
+}
+#introduce{
+    width: 580px;
+    float: right;
+}
+#introduce div{
+    margin-bottom: 40px;
+}
+#introduce .box1 h3{
+    font-size:20px;
+}
+#introduce .box1 p{
+    font-size: 12px;
+    color: darkgray;
+    margin: 10px 0;
+}
+#introduce .box1 h4{
+    font-size: 25px;
+    color: #ff1493;
+}
+#introduce .box1 span{
+    display:inline-block;
+    height:30px;
+    padding-top: 10px;
+    position: relative;
+    top:3px;
+}
+#introduce .box1 input{
+    height:20px;
+    width: 40px;
+}
+#introduce .box1 a{
+    display: block;
+    height: 40px;
+    width: 120px;
+    background: #ef8743;
+    color: #ffffff;
+    line-height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    border:1px solid #ef8743;
+}
+#introduce .box1 a:hover{
+    background: #ffffff;
+    border: 1px solid #000000;
+    color:#000;
+}
+#introduce .box2{
+    border-top:1px solid #ef8743;
+    border-bottom:1px solid #ef8743;
+    padding: 15px 0;
+    line-height: 30px;
+}
+#introduce .box2 .gray{
+    color:gray;
+    margin-right: 100px;
+}
+#introduce .box2 .color{
+    color:#ef8743;
+}
+#introduce .box3 h5{
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#introduce .box3 p{
+    color:gray;
+    font-size: 16px;
+    line-height: 20px;
+}
+#relative{
+    height: 450px;
+}
+#relative h2{
+    margin-bottom: 10px;
+    background: #666666;
+    /*text-indent: 10px;*/
+    padding-left: 10px;
+}
+#relative .wrapper div{
+    width: 285px;
+    float: left;
+}
+#relative img{
+    width: 255px;
+    height: 255px;
+    margin: 0 auto;
+    display: block;
+}
+#relative h4{
+    margin: 15px 0;
+    text-align: center;
+    font-size: 16px;
+}
+#relative a{
+    display: block;
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+    background: #000;
+    margin: 0 auto;
+    border: 1px solid #000000;
+}
+#relative a:hover{
+    background: #ffffff;
+    color: #000000;
+}
