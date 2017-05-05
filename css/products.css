@@ -1,0 +1,87 @@
+#main-body{
+    height: 980px;
+}
+.wrapper > h2{
+    margin: 20px 0;
+}
+#box-left{
+    width: 250px;
+    float: left;
+}
+.table h4{
+    margin-top: 20px;
+    width: 230px;
+    background: #464646;
+    height: 30px;
+    color: #ffffff;
+    line-height: 30px;
+    padding-left: 10px;
+}
+.table div{
+    width: 230px;
+    margin: 5px 0;
+    background: #f9f9f9;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+}
+.table div img{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.table input[type="checkbox"]{
+    margin: 5px 10px 0 5px;
+
+}
+#box-right{
+    width: 850px;
+    float: right;
+}
+.goods-info{
+    width: 249px;
+    height: 410px;
+    background: #f9f9f9;
+    border:1px solid #efefef;
+    float: left;
+    margin:20px 0 20px 20px;
+}
+.goods-info h4{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 42px;
+}
+.goods-info img{
+    width: 247px;
+    height: 230px;
+    border-bottom:1px solid #efefef;
+}
+.goods-info p{
+    margin:10px 0 10px 10px;
+    font-size: 15px;
+
+}
+.goods-info input{
+    margin-left: 10px;
+}
+.goods-info input[type="text"]{
+    font-size: 15px;
+    text-indent: 5px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.goods-info input[type="button"]{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    background: #ef8743;
+    color: #ffffff;
+    border-radius: 10px;
+    border: 0;
+}
+.goods-info input[type="button"]:hover{
+    background: orange;
+}
