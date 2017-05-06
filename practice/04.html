@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+
         #div1{
-            width: 0;
-            border-width: 50px;
-            border-style: solid;
-            border-left-color: #f00;
-            border-right-color: transparent;
-            border-top-color: transparent;
-            border-bottom-color: transparent;
+            position: relative;
+            background: red;
+            width: 50%;
+            height: 100px;
+        }
+        #div2{
+            position: absolute;
+            background: blue;
+            width: 100%;
+            left:100%;
+            top:0;
+            height: 100%;
         }
     </style>
 </head>
 <body>
-<div id="div1"></div>
+<div id="div1">div1
+    <div id="div2">div2</div></div>
+
 </body>
 </html>

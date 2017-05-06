@@ -1,24 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Document</title>
     <style>
-        #div1{
-            width: 400px;
-            height: 400px;
-            background: #ff0000;
+        *{
+            margin: 0;
+            padding: 0;
         }
-        #div2{
+        #left{
+            width: 280px;
+            background: #ffff00;
+            float: left;
+        }
+        div{
+            height: 300px;
+        }
+        #right{
             background: #00ff00;
-            width: 50%;
-            height: 50%;
+            width: 280px;
+            float: right;
+        }
+        #zhong{
+            background: #0000ff;
+            margin: 0 280px;
         }
     </style>
 </head>
 <body>
-<div id="div1">
-    <div id="div2"></div>
-</div>
+<!-- 两列布局 左右固定 中间自适应-->
+<div id="left"></div>
+
+<div id="right"></div>
+<div id="zhong"></div>
 </body>
 </html>
