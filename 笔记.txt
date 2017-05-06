@@ -77,7 +77,7 @@ clear:both;清除浮动，不会覆盖
 height:100%;相对高度，相对于父元素
 overflow:hidden;溢出隐藏
 子元素设置margin-top父元素会掉下去
-两元素兄弟关系，margin-bottem与margin-top取最大值
+两元素兄弟关系，margin-bottom与margin-top取最大值
 display: block;行级元素转化为块级元素
 display: inline;块级元素转化为行级元素
 display: inline-block;同时具有两种元素属性
@@ -99,3 +99,7 @@ outline:none;边框
 <br>换行
 <button>按钮
 默认字体大小16像素，中文不能小于20px
+伪元素选择器  css3
+#id::first-letter{}首字母
+#id::first-line{}第一行
+clear:both;清除前面浮动造成的影响，不会上去
