@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var condition = prompt("请输入");
+    console.log(condition);
+    console.log(typeof condition);
+    switch(condition) { //switch本来就是跳转的意思（又称为“开关”），所以switch语句就是判断情况，跳到符合的情况开始执行
+        case "a":
+        case "A":
+            alert("c的值是4");
+            break;
+        case 3:
+            alert("c的值肯定大于等于3");
+            break;
+        case 2:
+            alert("c的值肯定大于等于2");
+            break;
+        case 1:
+            alert("c的值肯定大于等于1");
+            break;
+        default:
+            alert("默认值");
+    }
+</script>
+</body>
+</html>
