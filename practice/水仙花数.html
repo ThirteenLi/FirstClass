@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>水仙花数100-999</h1>
+<script>
+    var a=[100];
+    for(var i=0;i<899;i++)
+    {
+        a[i+1]=a[i]+1;
+    }
+    function isFlower(x){
+        var h, t,o;
+        o=x%10;
+        t=((x%100)-o)/10;
+        h=(x-10*t-o)/100;
+        var yn;
+        if(x==(h*h*h+t*t*t+o*o*o))
+        {
+            yn=true;
+        }
+        else{
+            yn=false;
+        }
+        return yn;
+    }
+    for(var p in a){
+        if(isFlower(a[p])==true)
+        {
+            console.log(a[p]);
+        }
+    }
+</script>
+</body>
+</html>
