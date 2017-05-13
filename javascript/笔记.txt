@@ -1,3 +1,6 @@
 js五种基本数据类型
 string number boolean undefined null
+js引用类型
+内置对象    自定义对象   dom对象
+dom:document object model
 nan: not a number
