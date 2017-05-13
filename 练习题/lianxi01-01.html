@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+   var x=Math.random();//左闭右开可以等于0
+   var y=Math.random();
+   document.write(x>y?x:y);
+    console.log(x,y);
+   (function () {
+      function getLeapYear(year){
+          if(year%4==0&&year%100!=0||year%400==0){
+              return true;
+          }
+          else{
+              return false;
+          }
+      }
+       var year=2016;
+       if(getLeapYear(year)){
+           document.write("<h1>"+year+"是闰年"+"</h1>");
+       }
+
+   })();//函数立即调用
+</script>
+</body>
+</html>
