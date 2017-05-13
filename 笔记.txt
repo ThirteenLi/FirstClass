@@ -103,3 +103,4 @@ outline:none;边框
 #id::first-letter{}首字母
 #id::first-line{}第一行
 clear:both;清除前面浮动造成的影响，不会上去
+函数立即调用，避免污染全局变量
