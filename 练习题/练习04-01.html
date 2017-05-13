@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var iAge=window.prompt("请输入年龄","");
+    if(iAge<0){
+        document.write("<h1>滚</h1>");
+    }
+        else{
+            if(iAge<14){
+                document.write("你是个儿童");
+            }
+            else{
+                if(iAge<24){
+                    document.write("你是个青少年");
+                }
+                else{
+                    if(iAge<40)
+                    {
+                        document.write("你是个青年人");
+                    }
+                    else{
+                        if(iAge<60){
+                            document.write("你是个中年人");
+                        }
+                        else{
+                            document.write("你是个老年人");
+                        }
+                    }
+                }
+            }
+        }
+
+</script>
+
+</body>
+</html>
