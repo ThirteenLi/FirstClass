@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    (function(){
+        function print(n){
+            for(var i=0;i<n;i++){
+               for(var j=0;j<i+1;j++){
+                   document.write((j+1)+" ");
+               }
+           document.write("<br>");
+            }
+        }
+        var iTimes=prompt("请输入一个整数","");
+        print(iTimes);
+    })();
+</script>
+</body>
+</html>
