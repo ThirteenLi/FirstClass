@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    (function(){
+        var iNum=prompt("Please input the number","");
+        function multiplication(n){
+            var product=n;
+            for(var i= 1;i<n;i++){
+                product*=i;
+            }
+            return product;
+        }
+        function add(n){
+            var and=multiplication(n);
+            for(var i=1;i<n;i++){
+                and+=multiplication(i);
+            }
+            return and;
+        }
+       document.write(add(iNum));
+    })();
+
+</script>
+</body>
+</html>
