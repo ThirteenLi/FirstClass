@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    (function(){
+       var iDate=prompt("Please input the date from '0-6'","");
+        function a (day){
+            switch (day){
+                case '0':day= "Sunday";break;
+                case '1':day= "Monday";break;
+                case '2':day= "Tuesday";break;
+                case '3':day= "Wednesday";break;
+                case '4':day= "Thursday";break;
+                case '5':day= "Friday";break;
+                case '6':day= "Saturday";break;
+                default :day= "Sorry,I can't find it!";
+            }
+            return day;
+        }
+      alert(a(iDate));
+    })();
+</script>
+</body>
+</html>
