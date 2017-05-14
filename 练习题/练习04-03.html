@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    (function(){
+        function multiplication(n){
+            var product=n;
+            for(var i= 1;i<n;i++){
+               product*=i;
+            }
+            return product;
+        }
+        var iNum=prompt("Please input the number","");
+        document.write("Product is"+multiplication(iNum));
+    })();
+</script>
+</body>
+</html>
