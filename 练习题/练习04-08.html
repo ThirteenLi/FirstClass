@@ -9,7 +9,20 @@
     (function(){
         function gain(n){
             var a=[];
-
+            a[0]=Math.floor(n/1000);
+            a[1]=Math.floor((n-a[0]*1000)/100);
+            a[2]=Math.floor((n-a[0]*1000-a[1]*100)/10);
+            a[3]=n%10;
+            return a;
+        }
+        var iS=[];
+        for(var i=1000;i<10000;i++){
+            if(i%13==0){
+                iS=gain(i);
+                if(iS[0]==iS[1]+iS[2]){
+                    document.write(i+"<br>");
+                }
+            }
         }
     })();
 </script>
