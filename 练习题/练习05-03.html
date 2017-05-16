@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    (function(){
+           var times=6;
+           for(var i=105;i<1001;i+=3)
+           {
+                if(i%3==0&&i%5==0&&i%7==0){
+                    document.write(i+" ");
+                    times-=1;
+                }
+               if(times==0){
+                   document.write("<br>");
+                   times=6;
+               }
+           }
+    })();
+</script>
+</body>
+</html>
