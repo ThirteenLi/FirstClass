@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var iLuckyNumber=8;
+    var bSuccess=true;
+    var iSuccessTimes=0;
+    var iTimes=0;
+    var fP;
+    function fnGiveNumber(){
+        var num=[Math.floor(Math.random()*9+1),Math.floor(Math.random()*9+1),Math.floor(Math.random()*9+1)];
+        iTimes++;
+        return num;
+    }
+    function fnSuccess(num){
+        for(var p in num)
+        {
+            if(num[p]==iLuckyNumber)
+            {
+                bSuccess=true;
+                iSuccessTimes++;
+                break;
+            }
+            else{
+                bSuccess=false;
+            }
+        }
+    }
+    function Play(n){
+        for(var i=0;i<n;i++){
+            fnSuccess(fnGiveNumber());
+        }
+        fP=iSuccessTimes/iTimes;
+        document.write(fP+"<br>");
+        document.write(iTimes+"<br>");
+        document.write(iSuccessTimes+"<br>");
+    }
+    var n=prompt("请输入抽奖次数","");
+    Play(n);
+</script>
+</body>
+</html>
