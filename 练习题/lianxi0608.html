@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var months=[31,28,31,30,31,30,31,31,30,31,30,31];
+    var date=new Array(3);
+    function IsLeapYear(year){
+        if(year%4==0&&year%100!=0||year%400==0){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    function DayofYear(date){
+        var num=date[2];
+        for(var i=0;i<date[1]-1;i++){
+            num+=months[i];
+        }
+        if(IsLeapYear(date[0])==true&&date[1]>2){
+            num+=1;
+        }
+        return num;
+    }
+    date[0]=parseInt(prompt("请输入年份",""));
+    date[1]=parseInt(prompt("请输入月份",""));
+    date[2]=parseInt(prompt("请输入日期",""));
+    document.write(DayofYear(date));
+</script>
+</body>
+</html>
