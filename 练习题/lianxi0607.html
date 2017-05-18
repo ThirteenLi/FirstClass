@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p>斐波那契数列逆序</p>
+<script>
+    (function(){
+        var Fibonacci=[1,1];
+        for(var i=2;i<40;i++){
+            Fibonacci[i]=Fibonacci[i-1]+Fibonacci[i-2];
+        }
+        for(var i=0;i<40;i++){
+            document.write(Fibonacci[39-i]+",");
+            if((i+1)%6==0){
+                document.write("<br>");
+            }
+        }
+    })();
+</script>
+</body>
+
+</html>
