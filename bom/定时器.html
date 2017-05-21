@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            border: 0;
+        }
+        #container{
+            position: relative;
+            width: 250px;
+            height: 300px;
+            margin: 200px auto;
+            border:1px solid #000000;
+        }
+        #imgs{
+            width: 250px;
+            height: 300px;
+        }
+        #imgs img{
+            display:none;
+        }
+        #imgs .selected{
+            display: block;
+        }
+        #turn{
+            height: 20px;
+            width: 50px;
+            position:absolute;
+            bottom:10px;
+            left:10px;
+        }
+        #num{
+            height: 20px;
+            width: 100px;
+            position:absolute;
+            right:10px;
+            bottom:10px;
+        }
+        #num .selected{
+            background: #ffa500;
+        }
+        #turn h4,#num h4{
+            height: 20px;
+            width: 20px;
+            background: #000;
+            color:#fff;
+            float: left;
+            line-height: 20px;
+            text-align: center;
+            margin-left: 5px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="imgs">
+        <img src="c2.jpg" alt="error" class="selected"/>
+        <img src="c3.jpg" alt="error"/>
+        <img src="c5.jpg" alt="error"/>
+        <img src="c6.jpg" alt="error"/>
+    </div>
+    <div id="turn">
+        <h4 id="left">&lt;</h4>
+        <h4 id="right">&gt;</h4>
+    </div>
+    <div id="num">
+        <h4 class="selected">1</h4>
+        <h4>2</h4>
+        <h4>3</h4>
+        <h4>4</h4>
+    </div>
+</div>
+<script>
+    var now_index=0;
+    var timer;
+    var oImgs=document.getElementById("imgs");
+    var aimg=oImgs.getElementsByTagName("img");
+    var oNum=document.getElementById("num");
+    var aH4=oNum.getElementsByTagName("h4");
+    var oLeft=document.getElementById("left");
+    var oRight=document.getElementById("right");
+    var oContainer=document.getElementById("container");
+    function change(){
+        for(var i=0;i<aH4.length;i++){
+            aimg[i].className="";
+            aH4[i].className="";
+        }
+        aimg[now_index].className="selected";
+        aH4[now_index].className="selected";
+    }
+    for(var i=0;i<aH4.length;i++){
+        aH4[i].index=i;
+        aH4[i].onclick=function(){
+            now_index=this.index;
+            change();
+        };
+    }
+    oLeft.onclick=oRight.onclick=function(){
+        if(this==oLeft){
+            now_index=(now_index+3)%4;
+        }
+        if(this==oRight){
+            now_index=(now_index+1)%4;
+        }
+        change();
+    };
+    function play(){
+        timer=setInterval(function(){
+            oRight.onclick();
+        },1000)
+    }
+    play();
+    oContainer.onmouseover=function(){
+        clearInterval(timer);
+    };
+    oContainer.onmouseout=function(){
+        play();
+    };
+</script>
+</body>
+</html>
