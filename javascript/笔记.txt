@@ -4,3 +4,7 @@ js引用类型
 内置对象    自定义对象   dom对象
 dom:document object model
 nan: not a number
+return false;//阻止浏览器默认行为
+e=e||window.event;//兼容性问题
+this 当前对象的引用
+innerHTML   标签内容返回字符串

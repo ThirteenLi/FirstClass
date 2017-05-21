@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<a href="history.html">history</a>
+<script>
+    var a=5;
+    function fn(){
+        console.log("I'm fn");
+    }
+    console.log(a);
+    console.log(fn);
+    document.write("BOM");
+    function toTaoBao(){
+        if(navigator.userAgent.indexOf("iphone")!=-1){
+            location.href="http://www.m.taobao.com";//重定向
+        }
+        else{
+            location.href="http://www.taobao.com";
+        }
+    }
+    //toTaoBao();
+</script>
+</body>
+</html>
