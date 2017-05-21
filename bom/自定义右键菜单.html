@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100%;
+        }
+        html{
+            height:100%;
+        }
+        li{
+            list-style: none;
+        }
+        #menu{
+            width: 100px;
+            height: 149px;
+            border:1px solid #000;
+            position: absolute;
+            top:0;
+            left:0;
+            display: none;
+        }
+        #menu li{
+            width: 100px;
+            height: 29px;
+            border-bottom: 1px solid #ccc;
+            line-height: 29px;
+            text-align: center;
+        }
+        #menu li:hover{
+            background: #66ccff;
+        }
+    </style>
+</head>
+<body>
+<ul id="menu">
+    <li>打开</li>
+    <li>下载</li>
+    <li>分享</li>
+    <li>复制</li>
+    <li>删除</li>
+</ul>
+
+<script>
+    var oMenu=document.getElementById("menu");
+    var oLi=oMenu.getElementsByTagName("li");
+    var oBody=document.getElementsByTagName("body")[0];
+    document.oncontextmenu=function(e){
+        e=e||window.event;
+        oMenu.style.display="block";
+        if(e.clientX>oBody.clientWidth-100){
+            oMenu.style.left= e.clientX-100+"px";
+        }
+        else{
+            oMenu.style.left= e.clientX+"px";
+        }
+        if(e.clientY>oBody.clientHeight-149){
+            oMenu.style.top= e.clientY-149+"px";
+        }
+        else{
+            oMenu.style.top= e.clientY+"px";
+        }
+        return false;
+    };
+    document.onclick=function(){
+      oMenu.style.display="none";
+    };
+    for(var i=0;i<oLi.length;i++){
+        oLi[i].onclick=function(){
+            alert(this.innerHTML);
+        };
+    }
+
+</script>
+</body>
+</html>
