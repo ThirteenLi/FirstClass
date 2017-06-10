@@ -104,3 +104,6 @@ outline:none;边框
 #id::first-line{}第一行
 clear:both;清除前面浮动造成的影响，不会上去
 函数立即调用，避免污染全局变量
+visibility:hidden;可见性 看不见，占地方，不触发事件
+var target=e.target||window.event.srcElement;//获取事件源 有兼容性问题用“||”解决
+事件冒泡：子元素向父元素传播
