@@ -6,5 +6,5 @@ moveBy(x,y)
 this.className  class的名字
 aLi[i].xx=i;    给每个li对象自定义属性，保存在当时的i+
 setInterval(function(){},time);      time以毫秒为单位的时间
-clearInterval();   清楚定时器
+clearInterval();   清除定时器
 setTimeout(function(){},time);        延迟 运行一次
