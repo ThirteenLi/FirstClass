@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script>
+    window.onload=function(){
+        console.log(oImg.offsetWidth+"window加载完");
+        var oDiv=document.getElementById("div1");
+        console.log(oDiv);
+    };
+</script>
+<body>
+<div id="div1">divdiv</div>
+<img src="c3.jpg" alt="" id="igm1"/>
+</body>
+<script>
+    var oImg=document.getElementById("igm1");
+    console.log(oImg.offsetWidth+"标签加载完");//加载标签时输出，图片未载入，缓存后能获取图片宽度
+    oImg.onload=function(){
+        console.log(oImg.offsetWidth+"img加载完");
+    };
+</script>
+</html>
