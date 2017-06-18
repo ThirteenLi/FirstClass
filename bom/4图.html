@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            position: relative;
+            width: 300px;
+            border: 1px dashed #66ccff;
+            overflow: hidden;
+        }
+        #big-pic{
+            margin: 0 auto;
+            width: 250px;
+        }
+        #small-pic{
+            width: 410px;
+            position: relative;
+            left:0;
+        }
+        #small-pic img{
+            width: 95px;
+            border:1px solid #66ccff;
+        }
+        #small-pic .selected{
+            border:1px dashed #000;
+        }
+        span{
+            position: absolute;
+            width: 15px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            background: #000;
+            color:#ffffff;
+            top:45%;
+            cursor:pointer;
+        }
+        #left{
+            left:5px;
+        }
+        #right{
+            right:5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="big-pic">
+            <img src="c2.jpg" alt="error"/>
+        </div>
+        <div id="small-pic">
+            <img src="c2.jpg" alt="error" class="selected"/>
+            <img src="c3.jpg" alt="error"/>
+            <img src="c5.jpg" alt="error"/>
+            <img src="c6.jpg" alt="error"/>
+        </div>
+        <span id="left">&lt;</span>
+        <span id="right">&gt;</span>
+    </div>
+    <script>
+        var oBig=document.getElementById("big-pic"),
+                oSmall=document.getElementById("small-pic"),
+                oLeft=document.getElementById("left"),
+                oRight=document.getElementById("right"),
+                aBig=oBig.getElementsByTagName("img")[0],
+                aSmall=oSmall.getElementsByTagName("img");
+        var nowIndex=0;
+        function change(){
+            if(nowIndex<=1){
+                oSmall.style.left=0;
+            }else{
+                oSmall.style.left=-100+"px";
+            }
+            aBig.src=aSmall[nowIndex].src;
+            aSmall[nowIndex].className="selected";
+        }
+        for(var i=0;i<aSmall.length;i++){
+            aSmall[i].index=i;
+            aSmall[i].onclick=function(){
+                aSmall[nowIndex].className="";
+                nowIndex=this.index;
+                change();
+            };
+        }
+        oLeft.onclick=oRight.onclick=function(){
+            aSmall[nowIndex].className="";
+            nowIndex=this==oLeft?(nowIndex+3)%4:(nowIndex+1)%4;
+            change();
+        };
+    </script>
+</body>
+</html>
