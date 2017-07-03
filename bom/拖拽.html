@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #div1{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border-left:50px solid #ff0000;
+            border-right:50px solid #ffff00;
+            border-top:50px solid #ff00ff;
+            border-bottom:50px solid #00ff00;
+            background: #6cf;
+            position: absolute;
+            top:0;
+            left:0;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="div1"></div>
+<script src="../wichung-1.0.js"></script>
+<script>
+    var oDiv=id("div1");
+    var flag=0;
+    oDiv.onmouseover=function(){
+        oDiv.onmousedown=function(){
+            oDiv.style.background="#00ffff";
+            flag=1;
+            document.onmouseup=function(){
+                flag=0;
+                oDiv.style.background="#66ccff";
+            };
+            document.onmousemove= function (e) {
+                e=e||window.event;
+                if(flag==1){
+//                  animate(oDiv,{top: e.clientY,left: e.clientX});
+                    oDiv.style.top= e.clientY-0.5*oDiv.offsetHeight+"px";
+                    oDiv.style.left= e.clientX-0.5*oDiv.offsetWidth+"px";
+                }
+
+            }
+        };
+    };
+
+</script>
+</body>
+</html>
