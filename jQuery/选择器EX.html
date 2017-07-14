@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<ul id="ul1">
+    <li>001</li>
+    <li></li>
+    <li>002</li>
+    <li></li>
+    <li class="aa">003</li>
+    <li>0042</li>
+</ul>
+<script src="../jquery-1.11.2.js"></script>
+<script>
+    //$('#ul1 li:eq(1)').css('background','red');//等于
+    //$('#ul1 li:not(.aa)').css('background','red');
+    //$('#ul1 li:first').css('background','red');
+    //$('#ul1 li:last').css('background','red');
+    //$('#ul1 li:odd').css('background','red');//奇数
+    //$('#ul1 li:even').css('background','red');//偶数
+    //$('#ul1 li:lt(2)').css('background','red');//小于
+    //$('#ul1 li:gt(2)').css('background','red');//大于
+    //$('#ul1 li:contains(2)').css('background','blue');//包含
+    //var num=prompt('please input a number','');
+    //$('#ul1 li:contains('+num+')').css('color','green');//变量拼接字符串
+    //$("#ul1 li:empty").css('background','#6cf');
+    $('#ul1:has(.aa)').css('background','red');//找子元素带有.aa的
+</script>
+</body>
+</html>
