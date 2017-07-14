@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <button id="btn">click</button>
+    <div id="div1">div1
+        <p class=".p">hello world</p>
+    </div>
+    <script src="../jquery-1.11.2.js"></script>
+    <script>
+        $(function(){
+            var $btn=$('#btn');
+            $btn.on('click',function(){
+                alert(1111);
+                alert($(this).html());//jQuery对象
+                alert(this.innerHTML);//this原生对象
+            });
+//            var oDiv1=document.getElementById('div1');
+//            $(oDiv1).on('click',function(){
+//                alert($(this).html());
+//            });
+            $('#div1 p').on('click',function(){
+                alert($(this).html());
+            });//css样式从右往左找 先找p再找#div1速度慢
+            var $div1=$('#div1');
+            $('p',$div1).on('click',function(){
+                alert(123);
+            });
+
+
+
+            /**
+             * $('#btn') jQuery对象
+             * document.getElementById('btn')原生对象
+             * $可以把对象转换成jQuery对象
+             */
+        });
+    </script>
+</body>
+</html>
