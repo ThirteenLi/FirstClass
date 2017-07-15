@@ -16,7 +16,9 @@
 <script src="../jquery-1.11.2.js"></script>
 <script>
     $(function(){
-        $('#search').on('keyup',function(){
+        $('#search').on('keyup',function(e){
+            var num= e.keyCode||window.event.which;//返回键盘码
+            console.log(num);
            // console.log(this.value); //原生方法 快
             //console.log($(this).val());//jq方法
             $("#menu li").css('background','white');
