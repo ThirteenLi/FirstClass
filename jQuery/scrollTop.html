@@ -27,34 +27,42 @@
     <div id="top">top</div>
     <script src="../jquery-1.11.2.js"></script>
     <script>
-//        $(function(){
-//            var $top=$('#top');
-//            var $body=$('body');
-//            var timer;
-//            $top.on('click',function(){
-//                timer=setInterval(function(){
-//                    $body.scrollTop($body.scrollTop()-40);
-//                    if($body.scrollTop()<=0){
-//                        console.log(1);
-//                        clearInterval(timer);
-//                    }
-//                },50);
-//            });
-//        });
-        var oTop=document.getElementById('top');
-        var timer;
-        oTop.onclick=function(){
-            timer=setInterval(function(){
-                var iScrollTop=document.body.scrollTop||document.documentElement.scrollTop;
-                if(iScrollTop<=0){
-                    clearInterval(timer);
-                }else{
-                    window.scrollTo(0, iScrollTop-=50);
-                }
+        $(function(){
+            var target;
+            if($('html').scrollTop()){
+                target=$('html');
+            }else{
+                target=$('body');
+            }
+            console.log(target);
+            var $top=$('#top');
+            var timer;
+            $top.on('click',function(){
+                timer=setInterval(function(){
 
-
-            },50);
-        };
+                    if(target.scrollTop()<=0){
+                        console.log(1);
+                        clearInterval(timer);
+                    }else{
+                       target.scrollTop(target.scrollTop()-40);
+                    }
+                },50);
+            });
+        });
+//        var oTop=document.getElementById('top');
+//        var timer;
+//        oTop.onclick=function(){
+//            timer=setInterval(function(){
+//                var iScrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+//                if(iScrollTop<=0){
+//                    clearInterval(timer);
+//                }else{
+//                    window.scrollTo(0, iScrollTop-=50);
+//                }
+//
+//
+//            },50);
+//        };
     </script>
 </body>
 </html>
