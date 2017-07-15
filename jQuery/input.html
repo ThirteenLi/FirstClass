@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="text" id="search"/>
+
+<ul id="menu">
+    <li>zhang</li>
+    <li>wang</li>
+    <li>he</li>
+    <li>li</li>
+</ul>
+<script src="../jquery-1.11.2.js"></script>
+<script>
+    $(function(){
+        $('#search').on('keyup',function(){
+           // console.log(this.value); //原生方法 快
+            //console.log($(this).val());//jq方法
+            $("#menu li").css('background','white');
+            if(this.value!=""){
+
+                $("#menu li:contains("+this.value+")").css('background',"red");
+            }
+        });
+    });
+</script>
+</body>
+</html>
