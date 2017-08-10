@@ -1,9 +1,0 @@
-#header{
-    height: 120px;
-}
-#header .logo{
-    height: 120px;
-    width: 250px;
-    float: left;
-    background:url("../img/logo.png") no-repeat 0 center;
-}

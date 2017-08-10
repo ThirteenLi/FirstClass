@@ -1,0 +1,13 @@
+1200 992 768断点常用位置
+@meta(min-width:500px){
+css样式
+}
+@meta(orientation:landscape){
+css样式
+}横屏
+@meta(orientation:portrait){
+css样式
+}竖屏
+device-pixel-ratio分辨率倍数dpr
+兼容性逗号分隔()或用or连接.多条件用and连接()
+bootstrap
