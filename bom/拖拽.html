@@ -25,7 +25,7 @@
     </style>
 </head>
 <body>
-<div id="div1"></div>
+<div id="div1">helloworld</div>
 <script src="../wichung-1.0.js"></script>
 <script>
     var oDiv=id("div1");
@@ -35,6 +35,7 @@
             oDiv.style.background="#00ffff";
             flag=1;
             document.onmouseup=function(){
+                console.log(1);
                 flag=0;
                 oDiv.style.background="#66ccff";
             };
@@ -46,7 +47,8 @@
                     oDiv.style.left= e.clientX-0.5*oDiv.offsetWidth+"px";
                 }
 
-            }
+            };
+
         };
     };
 
