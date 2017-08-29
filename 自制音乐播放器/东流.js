@@ -1,3 +1,7 @@
+(function(){
+    window.onload=function(){
+
+
 var oMusic=id("music"),
     oLyric=id("lyric"),
     aLi=tag("li",oLyric),
@@ -42,3 +46,7 @@ function play(n){
     },n*1000);
 }
 play(time[jj]);
+
+
+    };
+})();

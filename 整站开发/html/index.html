@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../wenjian/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="../wenjian/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="../wenjian/themes/a.css" />
+    <!--<link rel="stylesheet" href="../css/skin_0.css" type="text/css" id="cssfile">-->
+    <link rel="shortcut icon" href="../img/favico.ico"/>
+    <style>
+    html{
+        width: 1440px;
+    }
+    body{
+        margin: 0;
+        width: 100%;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        list-style: none;
+    }
+    img{
+        border: 0;
+    }
+    a{
+        text-decoration: none;
+    }
+    .wrapper{
+        width: 1200px;
+        height: 1260px;
+        margin: -10px auto;
+        /*background: chocolate;*/
+    }
+    .image1{
+        height: 500px;
+        width: 100%;
+        /*background: green;*/
+        margin-top: 350px;
+    }
+    .words{
+        width: 370px;
+        height: 80px;
+        display: table;
+        float: left;
+    }
+    .words1 .a{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -75px;
+    }
+    .words1 .b{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -185px;
+        margin-top: -75px;
+    }
+    .words1 .c{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -75px;
+    }
+    .words1{
+        width: 100%;
+        height: 150px;
+        /*background: yellow;*/
+        position: relative;
+        top: 500px;
+        text-align: center;
+    }
+    .words p{
+        color: black;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 18px;
+        text-shadow: none;
+    }
+    .one{
+        float: left;
+        width: 370px;
+        height: 500px;
+        margin-right: 45px;
+    }
+    .three{
+        float: right;
+        width: 370px;
+        height: 500px;
+    }
+    .two{
+        float: left;
+        width: 370px;
+        height: 500px;
+    }
+    .container{
+        position: relative;
+        top: -100px;
+        width: 100%;
+    }
+    #img1{
+        width: 100%;
+        height: 1570px;
+        background: url("../img/Snip.png") no-repeat center;
+        position: absolute;
+        top: 100px;
+    }
+    .float{
+        font-weight: 400;
+        font-size: 100px;
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+        color: #6E6E6E;
+        letter-spacing: 10px;
+
+    }
+    .my{
+        float: left;
+        padding-left: 150px;
+    }
+    .place{
+        float: right;
+        padding-right: 150px;
+    }
+    .line1{
+        width: 100%;
+        height: 50px;
+        border: 0;
+    }
+    .form{
+        width: 480px;
+        height: 50px;
+        /*background: green;*/
+        position: absolute;
+        right: 0;
+        top: 3px;
+    }
+    .form span{
+        display: inline-block;
+        width: 100px;
+        height: 50px;
+        /*background: red;*/
+        margin-right: 10px;
+        text-align: center;
+        line-height: 50px;
+    }
+    .form a{
+        text-shadow: none;
+    }
+    .introduce{
+        width: 1200px;
+        height: 550px;
+        background: #8492df;
+        position: absolute;
+        top: 930px;
+    }
+    .introduce img{
+        width: 320px;
+        height: 350px;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+    .a img{
+        height: 40px;
+        width: 100px;
+        /*background: darkorange;*/
+        position: absolute;
+        top: 390px;
+        left: 136px;
+    }
+    .small .b{
+        display: block;
+        height: 30px;
+        width: 320px;
+        /*background: darkorange;*/
+        text-align: center;
+        line-height: 30px;
+        position: absolute;
+        top: 440px;
+        left: 25px;
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #464646;
+        text-shadow: none;
+     }
+    .small .c{
+        height: 30px;
+        width: 175px;
+        /*background: darkorange;*/
+        padding-left: 140px;
+        line-height: 32px;
+        position: absolute;
+        top: 480px;
+        left: 25px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #464646;
+        text-shadow: none;
+    }
+    .c img{
+        width: 14px;
+        height: 18px;
+        position: absolute;
+        top: 7px;
+        left: 120px;
+    }
+    .in1{
+        width: 395px;
+        height: 520px;
+        /*background: red;*/
+        margin-top: 20px;
+        border-right: 1px #6E6E6E solid;
+        float: left;
+    }
+    .in2{
+        width: 395px;
+        height: 520px;
+        /*background: dodgerblue;*/
+        margin-top: 20px;
+        border-left: 1px #6E6E6E  double;
+        float: right;
+    }
+    .content{
+        text-shadow: none;
+        width: 300px;
+        height: 40px;
+        /*background: gold;*/
+        border-bottom: 1px solid #6E6E6E;
+        margin: 10px auto;
+        position: relative;
+    }
+    .content h4{
+        width: 100px;
+        height: 40px;
+        /*background: aqua;*/
+        margin: 0;
+        float: left;
+        line-height: 43px;
+        text-align: center;
+        color: #464646;
+        text-shadow: none;
+    }
+    .content span{
+        position: relative;
+        left: 30px;
+        top: 10px;
+        color: #464646;
+        font-size: 15px;
+    }
+    .content .aa{
+        position: absolute;
+        top: 12px;
+        left: 5px;
+        width: 20px;
+        height: 18px;
+        display: block;
+    }
+    .content .bb{
+        position: absolute;
+        top: 12px;
+        left: 5px;
+        width: 20px;
+        height: 18px;
+        display: block;
+    }
+    .content .cc{
+        position: absolute;
+        top: 10px;
+        left: 6px;
+        width: 17px;
+        height: 21px;
+        display: block;
+    }
+    .content .dd{
+        position: absolute;
+        top: 10px;
+        left: 6px;
+        width: 18px;
+        height: 21px;
+        display: block;
+      }
+    .content .ee{
+        position: absolute;
+        top: 12px;
+        left: 5px;
+        width: 21px;
+        height: 17px;
+        display: block;
+    }
+    .content .ff{
+        position: absolute;
+        top: 12px;
+        left: 6px;
+        width: 21px;
+        height: 17px;
+        display: block;
+    }
+    .content .special{
+        width: 132px;
+        height: 40px;
+        /*background: aqua;*/
+        margin: 0;
+        float: left;
+        line-height: 43px;
+        text-align: center;
+        color: #464646;
+        text-shadow: none;
+    }
+    .color{
+        text-shadow: none;
+    }
+    .intro{
+        width: 340px;
+        height: 50px;
+        /*background: green;*/
+        padding-left: 30px;
+        margin-bottom: 10px;
+        display: table;
+        text-shadow: none;
+    }
+    .intro p{
+        margin: 0;
+        color: #6E6E6E;
+        font-size: 17px;
+    }
+    .intro1{
+        width: 380px;
+        height: 188px;
+        /*background: gold;*/
+        position: relative;
+        top: 10px;
+    }
+    .in3{
+        width: 408px;
+        height: 520px;
+        /*background: red;*/
+        float: left;
+    }
+    .in31{
+        width: 380px;
+        height: 325px;
+        /*background: cadetblue;*/
+        margin: 0 auto;
+        border-bottom: 1px solid #6E6E6E;
+    }
+    .num{
+        text-shadow: none;
+        width: 350px;
+        height: 50px;
+        /*background: darkgoldenrod;*/
+        position: relative;
+        top: 60px;
+        left: 20px;
+    }
+    .num p{
+        margin: 0;
+        color: #464646;
+    }
+    #footer{
+        width: 100%;
+        height: 50px;
+        background-color: #555698;
+        position: relative;
+        left: 0;
+        top: 1550px;
+    }
+    #footer span{
+        display: inline-block;
+        height: 20px;
+        width: 280px;
+        text-align: center;
+        line-height: 20px;
+        text-shadow: none;
+        font-size: 10px;
+        color: white;
+        font-weight: 500;
+        letter-spacing: 2px;
+        /*background: red;*/
+    }
+    #footer .a{
+        position: absolute;
+        top: 16px;
+        left: 480px;
+
+    }
+    #footer .b{
+        position: absolute;
+        top: 16px;
+        left: 725px;
+    }
+    #clearfix{
+         width: 220px;
+         height: 400px;
+         background: #3c3b3b;
+         position: relative;
+         top: 35px;
+         left: 8px;
+         display: none;
+    }
+    .first{
+        /*background: red;*/
+        width: 200px;
+        height: 380px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .theme{
+        height: 1210px;
+        width: 100%;
+        background: darkcyan;
+    }
+    .skin1{
+        width: 185px;
+        height: 45px;
+        /*background: red;*/
+        padding-left: 15px;
+    }
+    .skin2{
+        width: 185px;
+        height: 45px;
+        /*background: red;*/
+        padding-left: 15px;
+    }
+    .skin1 li{
+        float: left;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    .skin2 li{
+        float: left;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    .color1{
+       width: 64px;
+       height: 20px;
+       position: absolute;
+       top: 20px;
+       /*background: #6E6E6E;*/
+       text-shadow: none;
+    }
+    .color2{
+        height: 20px;
+        width: 64px;
+        position: absolute;
+        top: 90px;
+        /*background: #6E6E6E;*/
+        text-shadow: none;
+    }
+    #skin_0{
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: #555698;
+    }
+    #skin_1{
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: #BB3BD9;
+    }
+    #skin_2{
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: #E31559;
+    }
+    #skin_3{
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: #08BECE;
+    }
+    #skin_4{
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: #FBA60A;
+    }
+    #skin_5{
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: #AFD400;
+    }
+    #skin_6{
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: #555698;
+    }
+    #skin_7{
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: #BB3BD9;
+    }
+    #skin_8{
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: #E31559;
+    }
+    #skin_9{
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: #08BECE;
+    }
+    #skin_10{
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: #FBA60A;
+    }
+    #skin_11{
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: #AFD400;
+    }
+    #clearfix::after{
+        clear: both;
+        content:"";
+        display: block;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="line1" data-role="header" data-theme="a" data-position="fixed">
+            <a id="set" href="#" data-role="button" data-icon="gear">
+                <span class="color">设置</span>
+            </a>
+            <div id="clearfix">
+                <ul class="first">
+                    <li class="color1">主题颜色
+                        <ul class="skin1">
+                            <li >
+                                <a id="skin_0" href=""></a>
+                            </li>
+                            <li><a id="skin_1" href=""></a></li>
+                            <li><a id="skin_2" href=""></a></li>
+                            <li><a id="skin_3" href=""></a></li>
+                            <li><a id="skin_4" href=""></a></li>
+                            <li><a id="skin_5" href=""></a></li>
+                        </ul>
+                    </li>
+                    <li class="color2">背景颜色
+                        <ul class="skin2">
+                            <li >
+                                <a id="skin_6" href=""></a>
+                            </li>
+                            <li><a id="skin_7" href=""></a></li>
+                            <li><a id="skin_8" href=""></a></li>
+                            <li><a id="skin_9" href=""></a></li>
+                            <li><a id="skin_10" href=""></a></li>
+                            <li><a id="skin_11" href=""></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="form">
+                <span><a href="">首页</a></span>
+                <span><a href="">我的资料</a></span>
+                <span><a href="">我的项目</a></span>
+                <span><a href="">联系方式</a></span>
+            </div>
+        </div>
+        <div id="img1">
+            <p class="float my">我的</p>
+            <p class="float place">地盘</p>
+            <div class="theme">
+                <div class="wrapper">
+                    <div class="image1">
+                        <div class="one">
+                            <img src="../img/image1.png" alt="">
+                        </div>
+                        <div class="two">
+                            <img src="../img/image2.png" alt="">
+                        </div>
+                        <div class="three">
+                            <img src="../img/image3.png" alt="">
+                        </div>
+                        <div class="words1">
+                            <div class="words a"><p>梦里树下，心间花海，只要有你在，都很温暖</p></div>
+                            <div class="words b"><p>春暖花开，让梦想如紫色的花海般蔓延起舞，把每一天都当做生命全新的开始</p></div>
+                            <div class="words c"><p>待我们年老时,你可否陪我一起在紫色的花海里走过</p></div>
+                        </div>
+                    </div>
+                    <div class="introduce">
+                        <div class="in3">
+                            <div class="in31">
+                                <div class="num">
+                                    <p>1、精通 HTML/CSS能够编写语义化的HTML,模块化的 CSS,完成较复杂的布局.</p>
+                                </div>
+                                <div class="num">
+                                    <p>2、精通 原生JavaScript.</p>
+                                </div>
+                                <div class="num">
+                                    <p>3、熟悉 Vue/React等框架.</p>
+                                </div>
+                                <div class="num">
+                                    <p>4、擅长 前端性能优化.</p>
+                                </div>
+                                <div class="num">
+                                    <p>5、拥有 多个项目经验.</p></div>
+                            </div>
+                        </div>
+                        <div id="txt"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../../wichung-1.0.js"></script>
+    <script src="../wenjian/jquery-1.11.2.js"></script>
+    <script src="../wenjian/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript"></script>
+    <script src="../js/js.js"></script>
+    <script src="../js/js1.js"></script>
+    <script>
+        (function(){
+            function startTime()
+            {
+                var today=new Date();
+                var h=today.getHours();
+                var m=today.getMinutes();
+                var s=today.getSeconds();
+                m=checkTime(m);
+                s=checkTime(s);
+                document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+                t=setTimeout("startTime()",500);
+            }
+            function checkTime(i)
+            {
+                if (i<10)
+                {i="0" + i}
+                return i
+            }
+
+        })();
+    </script>
+</body>
+</html>
